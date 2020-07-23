@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club-in</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- CSS only -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+ <style>
+
+*, *::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "poppins", sans-serif;
+}
+
+.l-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 400px) {
+  .l-container {
+    max-width: 450px;
+  }
+}
+@media (min-width: 600px) {
+  .l-container {
+    max-width: 900px;
+  }
+}
+@media (min-width: 1000px) {
+  .l-container {
+    max-width: 1200px;
+  }
+}
+
+.l-row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 600px) {
+  .l-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.column {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .column-6 {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .column-6 {
+    flex: 1 1 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+.section--testimonial {
+  background: whitesmoke;
+}
+.section__title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.section__subtitle {
+  font-weight: 300;
+  opacity: 0.9;
+  margin-bottom: 60px;
+  display: inline-block;
+}
+
+.card {
+  margin-bottom: 50px;
+}
+.card__image {
+  max-width: 100%;
+}
+.card__title {
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  color: #333;
+  font-weight: 600;
+}
+.card__subtitle {
+  opacity: 0.8;
+  font-weight: 300;
+}
+.card__body {
+  font-weight: 300;
+}
+
+@media (min-width: 1px) {
+  img {
+    width: 100%;
+  }
+}
+
+ </style>
+  <section class="section section--testimonial">
+    <div class="l-container">
+      <h2 class="section__title">Our Developers</h2>
+      <span class="section__subtitle">Utroque noluisse ullamcorper at sed, cum facer deseruisse an. Per ei falli definitionem.</span>
+    </div>
+    <div class="l-container">
+      <div class="l-row">
+        <div class="column column-6 column-4">
+          <div class="card">
+            <img class="card__image" src="http://unsplash.it/300/250?random=34" alt="image">
+            <h3 class="card__title">Mr. John Doe</h3>
+            <span class="card__subtitle">Fullstack Developer</span>
+            <p class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime praesentium veniam cumque? Id mollitia quos nobis officia earum facilis.</p>
+          </div>
+        </div>
+        <div class="column column-6 column-4">
+          <div class="card">
+            <img class="card__image" src="http://unsplash.it/300/250?random=20" alt="image">
+            <h3 class="card__title">Prof Moriarty</h3>
+            <span class="card__subtitle">Frontend Developer</span>
+            <p class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime praesentium veniam cumque? Id mollitia quos nobis officia earum facilis.</p>
+          </div>
+        </div>
+        <div class="column column-6 column-4">
+          <div class="card">
+            <img class="card__image" src="http://unsplash.it/300/250?random=87" alt="image">
+            <h3 class="card__title">Jane Doe</h3>
+            <span class="card__subtitle">Backend Developer</span>
+            <p class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime praesentium veniam cumque? Id mollitia quos nobis officia earum facilis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
